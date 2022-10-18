@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form-Login</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <script src="./JS/index.js"></script>
+</head>
+<body>
+    <form action="" method="post" name="fDangNhap" id="fDangNhap" onsubmit="return GuiThongTin();">
+        <table cellpadding="5" cellpadding="5">
+            <tr align="center">
+                <th colspan="2">Form Đăng Nhập</th>
+            </tr>
+            <tr>
+                <td align="right">Tên người dùng</td>
+                <td><input type="text" id="txtUserName" name="txtUserName" size="30" maxlength="25" class="txt"></td>
+            </tr>
+            <tr>
+                <td align="right">Mật khẩu</td>
+                <td><input type="password" id="txtPassword" name="txtPassword" size="30" maxlength="25" class="txt"></td>
+            </tr>
+            <tr align="center">
+                <td colspan="2">
+                    <input type="submit" id="btnLogin" name="btnLogin" value="Đăng nhập" class="btn">
+                    <input type="reset" id="btnReset" name="btnReset" value="Làm lại" class="btn" onclick="LamLai();">
+                </td>
+            </tr>   
+            <tr align="center">
+                <td colspan="2" height="50">
+                    <label id="thongbao"></label>
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
